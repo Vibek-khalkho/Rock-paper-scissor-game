@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(to bottom, rgba(0, 174, 255, 0.514) 10%,  rgba(0, 102, 97, 0.644) 70%);
+}
+h1{
+    position: relative;
+    top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    text-transform: uppercase;
+    font-size: 50px;
+}
+.items{
+    position: relative;
+    background-color: bisque;
+    width: 900px;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 230px;
+    margin-top: 40px;
+
+}
+.stone{
+    background-color:burlywood;
+    border-radius:20px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 300px;
+    margin-left: 50px;
+
+}
+.stone:hover{
+    background-color:rgba(228, 183, 124, 0.829) ;
+}
+.paper{
+    background-color:burlywood;
+    border-radius:20px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+.paper:hover{
+    background-color:rgba(228, 183, 124, 0.829) ;
+}
+.scisor{
+    background-color:burlywood;
+    border-radius:20px;
+    margin: 10px;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin-top: 300px;
+    margin-left: 50px;
+}
+.scisor:hover{
+    background-color:rgba(228, 183, 124, 0.829) ;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: uppercase;
+}
+
+.player{
+    position: absolute;
+    background: url(img/select.jfif);  
+    background-position: center;
+    background-size: cover;
+    border-radius:20px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    bottom: 150px;
+    left: 50px;
+    transform-origin: center left;
+    animation: shake 3s infinite;
+    box-shadow: 10px 10px 60px ;
+
+
+}
+.bot{
+    position: absolute;
+    background: url(img/select.jfif);  
+    background-size: cover;
+    border-radius:20px;
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    bottom: 150px;
+    left: 530px;
+    transform-origin: center right;
+    animation: shake 3s infinite;
+    box-shadow: 10px 10px 60px ;
+
+}
+@keyframes shake {
+    0% {transform: rotate(0deg);}
+    10% {transform: rotate(5deg);}
+    20% {transform: rotate(-5deg);}
+    30% {transform: rotate(5deg);}
+    40% {transform: rotate(-5deg);}
+    50% {transform: rotate(5deg);}
+    60% {transform: rotate(-5deg);}
+    70% {transform: rotate(5deg);}
+    80% {transform: rotate(-5deg);}
+    90% {transform: rotate(5deg);}
+    100% {transform: rotate(-5deg);}
+}
+#replay{
+    width: 200px;
+    height: 80px;
+    background: #000000;
+    margin-top: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px black;
+    font-size: 20px;    
+    text-transform: uppercase;
+    color: white;
+    transition: 0.3s;
+}
+#replay:hover{
+    background-color:rgba(3, 3, 3, 0.829) ;
+}
+
+.declare{
+    position: absolute;
+    bottom: 250px;
+    font-size: 80px;
+    opacity: 0;
+   z-index: 1;
+   font-family: cursive;
+   color: rgb(8, 44, 248);
+ 
+
+
+}
+
+
