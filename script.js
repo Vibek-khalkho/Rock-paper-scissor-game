@@ -20,6 +20,7 @@ let options=["stone","paper","scisor"]
         stopanimation()
         decider()
         changeimg()
+        myfun()
     })
     
     paper.addEventListener('click',()=>{
@@ -30,6 +31,7 @@ let options=["stone","paper","scisor"]
          stopanimation()
          decider()
          changeimg()
+         myfun()
 })
 scisor.addEventListener('click',()=>{
     player="scisor"
@@ -39,6 +41,7 @@ scisor.addEventListener('click',()=>{
     stopanimation()
     decider()
     changeimg()
+    myfun()
 })
 
 function botoption(){
@@ -61,6 +64,7 @@ replay.addEventListener('click',() =>{
     startanimation()
     declare.style.opacity= "0"
     imgreplay()
+     antimyfun()
 
 })
 function decider() {
@@ -131,4 +135,14 @@ function imgreplay(){
     playercl.style.backgroundPosition = "center";
     playercl.style.backgroundRepeat = "no-repeat";
 
+}
+function myfun(){
+    stone.style.display = "none"
+    paper.style.display = "none"
+    scisor.style.display = "none"
+}
+function antimyfun(){
+    stone.style.display = "block"
+    paper.style.display = "block"
+    scisor.style.display = "block"
 }

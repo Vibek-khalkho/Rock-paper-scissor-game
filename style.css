@@ -8,18 +8,21 @@
     height: 100%;
     width: 100%;
     text-align: center;
-    background: linear-gradient(to bottom, rgba(0, 174, 255, 0.514) 10%,  rgba(0, 102, 97, 0.644) 70%);
+    background: linear-gradient(135deg, #0f172a, #1e293b); 
 }
 h1{
     position: relative;
     top: 20px;
+    color: rgba(130, 130, 231, 0.849);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
     text-transform: uppercase;
     font-size: 50px;
+    text-shadow:0px 0px 40px rgba(23, 26, 65, 0.747)
+    ;
 }
 .items{
     position: relative;
-    background-color: bisque;
+    background-color: transparent;
     width: 900px;
     height: 450px;
     display: flex;
@@ -27,10 +30,12 @@ h1{
     align-items: center;
     left: 230px;
     margin-top: 40px;
+    border-radius: 50px;
+    box-shadow: 2px 3px 30px,2px 3px 40px rgba(255, 255, 255, 0.384) inset;
 
 }
 .stone{
-    background-color:burlywood;
+    background-color:rgb(252, 13, 13);
     border-radius:20px;
     margin: 10px;
     width: 150px;
@@ -38,13 +43,19 @@ h1{
     padding: 10px;
     margin-top: 300px;
     margin-left: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 60px rgb(236, 7, 7);
+    transition: all 0.4s;
 
+
+
+    
 }
 .stone:hover{
-    background-color:rgba(228, 183, 124, 0.829) ;
+    background-color:rgba(241, 241, 241, 0.993) ;
 }
 .paper{
-    background-color:burlywood;
+    background-color:rgb(28, 255, 7);
     border-radius:20px;
     margin: 10px;
     width: 150px;
@@ -52,12 +63,19 @@ h1{
     padding: 10px;
     margin-top: 300px;
     margin-left: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 60px rgb(45, 236, 7);
+        transition: all 0.4s;
+
+
+
+    
 }
 .paper:hover{
-    background-color:rgba(228, 183, 124, 0.829) ;
+    background-color:rgb(241, 241, 241) ;
 }
 .scisor{
-    background-color:burlywood;
+    background-color:rgb(37, 0, 245);
     border-radius:20px;
     margin: 10px;
     width: 150px;
@@ -65,9 +83,15 @@ h1{
     padding: 10px;
     margin-top: 300px;
     margin-left: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 60px rgb(11, 7, 236);
+    transition: all 0.4s;
+
 }
+
+
 .scisor:hover{
-    background-color:rgba(228, 183, 124, 0.829) ;
+    background-color:rgba(255, 255, 255, 0.993) ;
 }
 
 h2{
@@ -88,9 +112,11 @@ h2{
     left: 50px;
     transform-origin: center left;
     animation: shake 3s infinite;
-    box-shadow: 10px 10px 60px ;
+    box-shadow: 10px 10px 60px white;
+    transition: all 0.4s;
 
-
+    
+    
 }
 .bot{
     position: absolute;
@@ -104,7 +130,7 @@ h2{
     left: 530px;
     transform-origin: center right;
     animation: shake 3s infinite;
-    box-shadow: 10px 10px 60px ;
+    box-shadow: 10px 10px 60px white;
 
 }
 @keyframes shake {
@@ -123,27 +149,39 @@ h2{
 #replay{
     width: 200px;
     height: 80px;
-    background: #000000;
+    background:  #1e293b;
     margin-top: 10px;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: 5px 5px 10px black;
     font-size: 20px;    
     text-transform: uppercase;
     color: white;
     transition: 0.3s;
+    box-shadow: 2px 3px 30px rgb(42, 42, 109) inset,
+    2px 3px 40px rgba(255, 255, 255, 0.719) inset,
+    2px 3px 20px rgba(255, 255, 255, 0.719) ,
+    ;
+
 }
 #replay:hover{
-    background-color:rgba(3, 3, 3, 0.829) ;
+    box-shadow: 2px 3px 30px rgb(42, 42, 109) ,
+    2px 3px 20px rgba(97, 97, 97, 0.719)  ,
+    2px 3px 40px rgba(27, 25, 25, 0.719) , ;
+    background-color: #2727272f;
 }
+
 
 .declare{
     position: absolute;
-    bottom: 250px;
-    font-size: 80px;
+    bottom: 200px;
+    font-weight: 600;
+    font-size: 100px;
     opacity: 0;
    z-index: 1;
-   font-family: cursive;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    color: rgb(8, 44, 248);
+   text-shadow: 0 0 10px;
+   text-transform: uppercase;
  
 
 
